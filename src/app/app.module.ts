@@ -32,6 +32,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {LoginComponent} from './login/login.component';
 import { CreateCourseComponent } from './create-course/create-course.component';
 import {MatNativeDateModule} from '@angular/material/core';
+import {PasswordStrengthDirective} from './directives/password-strength.directive';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {CreateCourseStep2Component} from './create-course/create-course-step-2/create-course-step-2.component';
@@ -41,6 +42,7 @@ import {CreateCourseStep3Component} from './create-course/create-course-step-3/c
 import {CreateCourseStep1Component} from './create-course/create-course-step-1/create-course-step-1.component';
 import {FileUploadComponent} from './file-upload/file-upload.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {OnlyOneErrorPipe} from './pipes/only-one-error.pipe';
 import {LoginReactiveComponent} from './login-reactive/login-reactive.component';
 
 @NgModule({
@@ -53,12 +55,14 @@ import {LoginReactiveComponent} from './login-reactive/login-reactive.component'
         CourseDialogComponent,
         LoginComponent,
         CreateCourseComponent,
+        PasswordStrengthDirective,
         CreateCourseStep1Component,
         CreateCourseStep2Component,
         CreateCourseStep3Component,
         AddressFormComponent,
         FileUploadComponent,
-        LoginReactiveComponent
+        LoginReactiveComponent,
+        OnlyOneErrorPipe
     ],
     imports: [
         BrowserModule,
